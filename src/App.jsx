@@ -8,7 +8,7 @@ function App() {
   const [clima, setClima] = useState('Soleado')
 
   const cambiarUnidad = () => {
-    setUnidad('Fahrenheit')
+    unidad==="Celsius" ? setUnidad ("Fahrenheit"):setUnidad ("Celsius")
   }
 
   const cambiarClima = (estado) => {
@@ -19,7 +19,7 @@ function App() {
     <div className="container">
       <h1>Estado del tiempo</h1>
       <Controles onCambiarUnidad={cambiarUnidad} onCambiarClima={cambiarClima} />
-      <Display unidad={unidad} />
+      <Display unidad={unidad} clima={clima} />
     </div>
   )
 }
