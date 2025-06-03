@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Controles from './Controles';
-import Display from './Display';
+import Controles from './components/Controles';
+import Display from './components/Display';
 
 function App() {
   const [unidad, setUnidad] = useState('Celsius');
